@@ -1,0 +1,75 @@
+/**
+ * /* Dark mode styles
+ *
+ * @format
+ */
+@import '~/styles/variables';
+
+.wrapper {
+  height: 100%;
+}
+
+.light {
+  background-color: $light-primarly;
+  color: $light-secondary;
+  transition: all 0.6s ease;
+
+  .titleFirst > span,
+  span.navItem,
+  .testimonials,
+  footer {
+    color: $light-primarly;
+    border-color: $light-primarly;
+  }
+  .titleSecond > span,
+  span.buttonQuote,
+  h2,
+  span.checkmark {
+    color: $light-accent-font;
+  }
+  .card {
+    border-color: $light-accent-font;
+  }
+}
+
+.dark {
+  background-color: $dark-primarly;
+  color: $dark-secondary;
+  transition: all 0.6s ease;
+
+  .titleFirst > span,
+  span.navItem,
+  .testimonials,
+  footer,
+  input[type='submit'] {
+    color: $dark-primarly;
+    border-color: $dark-primarly;
+  }
+  .titleSecond > span,
+  span.buttonQuote,
+  h2,
+  span.checkmark {
+    color: $dark-accent-font;
+  }
+  .card {
+    border-color: $dark-accent-font;
+  }
+}
+
+// CONTACT FORM CSS
+.status-message {
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-family: $font-primarly;
+  margin-bottom: 2rem;
+}
+.success {
+  opacity: 1;
+  color: green;
+}
+.failure {
+  opacity: 1;
+  color: red;
+}

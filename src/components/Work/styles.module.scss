@@ -1,0 +1,75 @@
+/** @format */
+
+@import '~/styles/_variables';
+.section {
+  margin-top: 5rem;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .flexlist {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h2 {
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: $font-secondarly;
+  }
+}
+
+.link {
+  cursor: pointer;
+  color: inherit;
+}
+
+.imageWrap {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: $color-accent;
+  transition: all 0.3s ease-in;
+}
+
+.imageWrap:hover .imageOverlay {
+  opacity: 0;
+}
+.card {
+  width: 22rem;
+  min-height: 25rem;
+  border: solid 1px;
+  margin: 2rem;
+}
+.cardTitle {
+  padding: 1rem 1rem 0rem 1rem;
+  font-family: $font-primarly;
+  font-size: 1.5rem;
+}
+.cardDescr {
+  padding: 1rem;
+  font-family: $font-primarly;
+  font-size: 1rem;
+}
+
+@media (min-width: $bp-md) {
+  .section {
+    margin-top: 0;
+  }
+}

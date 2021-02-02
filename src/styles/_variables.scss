@@ -1,0 +1,24 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Roboto:wght@100;300;400;500&display=swap');
+
+$color-accent: #ac96b2;
+
+$color-accent-secondary: #b2ff59;
+
+$light-primarly: #fff;
+$light-secondary: #2a2b2d;
+$lignt-accent: $color-accent;
+$light-accent-font: saturate($color-accent, 50%);
+
+$dark-primarly: #2a2b2d;
+$dark-secondary: #fff;
+$dark-accent: $color-accent;
+$dark-accent-font: lighten($color-accent, 10%);
+
+$font-primarly: 'Roboto', sans-serif;
+$font-secondarly: 'Nunito', sans-serif;
+
+$bp-sm: 30em;
+$bp-md: 48em;
+$bp-lg: 68em;

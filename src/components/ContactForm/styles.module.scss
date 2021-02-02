@@ -1,0 +1,70 @@
+/** @format */
+
+@import '~/styles/_variables';
+
+.section {
+  margin-top: 5rem;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color-accent, 0.3);
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: $font-secondarly;
+  }
+}
+form {
+  width: 80%;
+  max-width: 50rem;
+}
+input {
+  height: 2rem;
+  width: 100%;
+  font-family: $font-primarly;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  height: 8rem;
+  width: 100%;
+  font-family: $font-primarly;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  padding-left: 0.75rem;
+}
+textarea::placeholder {
+  padding-left: 0.75rem;
+  padding-top: 0.2rem;
+}
+
+input[type='submit'] {
+  background-color: $color-accent-secondary;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  color: $dark-primarly;
+  &:hover {
+    background-color: darken($color-accent-secondary, 20%);
+  }
+}
+
+div[role='alert'] {
+  color: red;
+  margin-top: 1em;
+  font-family: $font-primarly;
+  font-size: 1rem;
+}
+
+.messageCharsLeft {
+  width: 100%;
+  text-align: right;
+}

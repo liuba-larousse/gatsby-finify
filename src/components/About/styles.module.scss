@@ -1,0 +1,94 @@
+/** @format */
+
+@import '~/styles/_variables';
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    'aboutText'
+    'aboutImg'
+    'serviceText'
+    'serviceImg';
+  p {
+    font-family: $font-primarly;
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-family: $font-secondarly;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.aboutImg {
+  grid-area: aboutImg;
+  background: rgba($color-accent, 0.3);
+  .imageWrap {
+    min-width: 30rem;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutText {
+  grid-area: aboutText;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  p,
+  h2 {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+.serviceText {
+  grid-area: serviceText;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  div,
+  h2 {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    p {
+      margin-left: 1rem;
+    }
+  }
+}
+.serviceImg {
+  grid-area: serviceImg;
+}
+.checkmark {
+  font-size: 1.8rem;
+}
+.aboutImg,
+.aboutText,
+.serviceText,
+.serviceImg {
+  width: 100%;
+  min-height: fit-content;
+  max-height: 30rem;
+  overflow: hidden;
+}
+
+@media (min-width: $bp-md) {
+  .section {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      'aboutImg aboutText'
+      'serviceText serviceImg';
+  }
+}

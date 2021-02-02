@@ -1,0 +1,103 @@
+/** @format */
+
+@import '~/styles/_variables';
+
+nav {
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  z-index: 1000;
+  span {
+    font-family: $font-secondarly;
+    font-size: 1.8rem;
+  }
+}
+
+.logoWrap {
+  width: 12rem;
+  height: auto;
+  margin-left: 5%;
+  flex: 1;
+}
+
+.navItems {
+  flex: 1;
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: $color-accent;
+  padding: 1.75rem;
+}
+
+.darkSwitcher {
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navButton {
+  background: transparent;
+  cursor: pointer;
+
+  span {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      border-bottom: 3px solid;
+    }
+  }
+}
+
+.navButtonQuote {
+  background: $color-accent-secondary;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: darken($color-accent-secondary, 20%);
+  }
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  li {
+    margin-top: 0.75rem;
+  }
+}
+.dropdown.visuallyHidden {
+  display: none;
+}
+.menuIcon {
+  span {
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
+@media (min-width: $bp-md) {
+  .navItems {
+    background: transparent;
+  }
+  .menuIcon {
+    display: none;
+  }
+
+  .dropdown.visuallyHidden {
+    display: flex;
+  }
+
+  .dropdown {
+    flex-direction: row;
+    align-items: center;
+    li {
+      margin-left: 2rem;
+    }
+  }
+}
