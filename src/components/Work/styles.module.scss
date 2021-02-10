@@ -31,6 +31,8 @@
 
 .imageWrap {
   height: auto;
+  max-height: 15rem;
+  overflow: hidden;
   width: 100%;
   position: relative;
 }
@@ -65,7 +67,15 @@
 .cardDescr {
   padding: 1rem;
   font-family: $font-primarly;
+
   font-size: 1rem;
+}
+
+.cardPass {
+  padding: 0rem 1rem 0rem 1rem;
+  font-family: $font-primarly;
+  font-size: 1rem;
+  opacity: 0.7;
 }
 
 @media (min-width: $bp-md) {

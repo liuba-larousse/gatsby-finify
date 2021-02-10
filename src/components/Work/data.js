@@ -5,26 +5,31 @@ const projects = [
     id: 0,
     name: 'Footwork Labs',
     url: 'https://www.footworklabs.com',
-    imgindex: '0',
+    password: 'N/A',
+    imgindex: 0,
     desc:
-      'Finify partner helped my to set up my new Shopify store quickly, helped et up the product and choose right Apps to work with. Very friendly and rprofessional agency to work with',
+      'Soccer Coaching Website with cart functionaity for purchuasing various sports programms',
   },
 
   {
     id: 1,
-    name: 'Beauty Store',
-    url: 'https://www.beautystore.com',
-    imgindex: '1',
+    name: 'Paradis de l`art',
+    url:
+      'https://fpk8iueyob12xaqx-52805795996.shopifypreview.com',
+    imgindex: 1,
+    password: 'skeats',
     desc:
-      "Really good. Finify has completely surpassed our expectations. It's just amazing. ",
+      'Art Studio and Art Gallery Website with ability to purchuase the local art online from comfort of your home ',
   },
   {
     id: 2,
-    name: 'Dance school',
-    url: 'https://www.danceschool.com',
-    imgindex: '2',
+    name: 'La Ligerie',
+    url:
+      'https://nhjojumhthqf3ca0-53482782920.shopifypreview.com',
+    imgindex: 2,
+    password: 'iartew',
     desc:
-      'Buy this now. I would gladly pay over 600 dollars for Finify. The service was excellent. I am really satisfied with my Finify.',
+      'Lingerie brand and e-commerce project, women empowerment community and quality women underwear',
   },
 ];
 

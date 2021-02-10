@@ -16,7 +16,7 @@ nav {
 }
 
 .logoWrap {
-  width: 12rem;
+  max-width: 12rem;
   height: auto;
   margin-left: 5%;
   flex: 1;
@@ -82,6 +82,9 @@ nav {
   }
 }
 @media (min-width: $bp-md) {
+  nav {
+    align-items: center;
+  }
   .navItems {
     background: transparent;
   }

@@ -39,6 +39,9 @@ export default function Work() {
       <a href={each.url} className={s.link}>
         <p className={s.cardTitle}>{each.name}</p>
       </a>
+      <p className={s.cardPass}>
+        password: {each.password}
+      </p>
       <p className={s.cardDescr}>{each.desc}</p>
     </div>
   ));
