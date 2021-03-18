@@ -10,13 +10,12 @@ import About from '~/components/About/About';
 import Testimonials from '~/components/Testimonials/Testimonials';
 import Work from '~/components/Work/Work';
 import ContactForm from '~/components/ContactForm/ContactForm';
+import SEO from '~/components/SEO/SEO';
 
 const IndexPage = () => {
   return (
     <Layout pageName='home'>
-      <Helmet>
-        <title>Home Page</title>
-      </Helmet>
+      <SEO title='E-Commerce Web Development Studio' />
       <Hero />
       <About />
       <Testimonials />

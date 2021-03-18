@@ -4,12 +4,11 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'Finify',
-
-    description:
-      'Shopify partner and web development agency',
+    author: 'liuba.larousse',
+    description: 'E-Commerce Web Development Studio',
     url: 'https://www.finify.expert', // No trailing slash allowed!
-    image: '/images/snape.jpg', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@occlumency',
+    image:
+      'https://www.finify.expert/assets/images/goImage.png', // Path to your image you placed in the 'static' folder
   },
   plugins: [
     'gatsby-plugin-resolve-src',
