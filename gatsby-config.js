@@ -7,7 +7,8 @@ module.exports = {
     author: 'liuba.larousse',
     description: 'E-Commerce Web Development Studio',
     url: 'https://www.finify.expert', // No trailing slash allowed!
-    image: 'https://www.finify.expert/images/goImage.png', // Path to your image you placed in the 'static' folder
+    image:
+      'https://www.finify.expert/static/a4f33d0f32f787cb549f5fd4e2047d2c/d9e4f/hero.jpg', // Path to your image you placed in the 'static' folder
   },
   plugins: [
     'gatsby-plugin-resolve-src',
